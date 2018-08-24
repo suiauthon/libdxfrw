@@ -33,7 +33,7 @@ namespace DRW {
         ARC,
 //        ATTDEF,
 //        ATTRIB,
-        BLOCK,// and ENDBLK
+        DWR_BLOCK,// and ENDBLK
 //        BODY, //encripted propietry data
         CIRCLE,
         DIMENSION,
@@ -509,7 +509,7 @@ class DRW_Block : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Block() {
-        eType = DRW::BLOCK;
+        eType = DRW::DWR_BLOCK;
         layer = "0";
         flags = 0;
         name = "*U0";
